@@ -1,0 +1,32 @@
+{
+  "Grype": {
+    "grype": [
+      {
+        "images_scanned": 23,
+        "total_vuln_components": 20149,
+        "total_vulnerabilities": 15533,
+        "Critical_count": 8313,
+        "high_count": 2996,
+        "med_count": 8313,
+        "low_count": 3987,
+        "scan_date": "2021-08-03T19:39:02.524193",
+        "time_taken": 97.80229139328003
+      }
+    ]
+  },
+  "Trivy": {
+    "trivy": [
+      {
+        "images_scanned": 23,
+        "total_vuln_components": 53,
+        "total_vulnerabilities": 5303,
+        "Critical_count": 2168,
+        "high_count": 1544,
+        "med_count": 2168,
+        "low_count": 987,
+        "scan_date": "2021-08-03T19:39:12.861218",
+        "time_taken": 10.32552194595337
+      }
+    ]
+  }
+}
