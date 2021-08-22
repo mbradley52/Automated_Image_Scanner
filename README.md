@@ -8,12 +8,14 @@ Automatically scan a list of container images with Trivy, Grype and Snyk powered
 
 ## `upload_to_elastic.py`
 
-Consumes the output from `scan_images.py` to create normalized json payloads that are then uploaded to an Elasticsearch via the python Elasticsearch library. The Elasticsearch database must be running for this script to finish. View the Elasticsearch section for configuring and starting the Elasticsearch database.
+Consumes the output from `scan_images.py` to create normalized json payloads that are then uploaded to Elasticsearch via the python Elasticsearch library. The Elasticsearch database must be running for this script to finish. View the Elastic stack (ELK) on Docker section for configuring and starting the Elasticsearch database.
 
-## Elasticsearch
+## Elastic stack (ELK) on Docker
 
 The `docker-elk` directory is a containerized version of Elasticsearch configured with docker-compose. <i>Docker is required.</i> Navigate to this directory:
 
 - Run the command `docker-compose up` to start the stack.
 - `docker-compose down` or `docker-compose restart` can be used to shutdown or restart the stack.
 - The script is configured for the Elasticsearch database created by docker-compose listening at http://Localhost:9200.
+
+Reference https://github.com/deviantony/docker-elk for Elastic stack (ELK) on Docker source code.
